@@ -1,3 +1,6 @@
+$blue-main: rgb(27, 238, 238);
+$blue-secondary: rgb(24, 149, 207);
+
 body {
     font-family: sans-serif;
     background-color: #040404;
@@ -19,11 +22,11 @@ body {
 }
 
 a {
-    color: greenyellow;
+    color: $blue-main;
     text-decoration: none;
 
     &:hover {
-        color: green;
+        color: $blue-secondary;
         text-decoration: none;
     }
 }
@@ -31,7 +34,7 @@ a {
 #landing {
     width: 100%;
     height: 100vh;
-    background: url("https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinyrgb&dpr=2&h=750&w=1260") top right;
+    background: url("https://i.pinimg.com/originals/fd/eb/a4/fdeba43a9d969e0a5819f73e5a1d74bf.jpg") top right;
     background-size: cover;
     position: relative;
 
@@ -76,7 +79,7 @@ a {
 
     .btn-scroll {
         transition: .5s;
-        color: greenyellow;
+        color: $blue-main;
         animation: up-down 1s ease-in-out infinite alternate-reverse both;
     
         i {
@@ -84,7 +87,7 @@ a {
         }
 
         &:hover {
-            color: rgb(167, 238, 139);
+            color: $blue-secondary;
         }
     }
 }
@@ -119,7 +122,7 @@ a {
     .progress-bar {
         height: 10px;
         transition: .9s;
-        background: linear-gradient(to right, blue, lightblue, white);
+        background: linear-gradient(to right, lightblue, blue);
     }
 }
 
