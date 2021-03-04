@@ -1,6 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@-webkit-keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+* {
+  max-width: 100%;
+}
+
 body {
-  font-family: sans-serif;
-  background-color: #040404;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background-color: #525252;
   color: #FFF;
   position: relative;
   background: transparent;
@@ -9,7 +50,7 @@ body {
 body:before {
   content: "";
   position: fixed;
-  background: #040404 top right no-repeat;
+  background: #525252 top right no-repeat;
   background-size: hover;
   left: 0;
   right: 0;
@@ -19,7 +60,7 @@ body:before {
 }
 
 a {
-  color: #1beeee;
+  color: #1dcccc;
   text-decoration: none;
 }
 
@@ -71,7 +112,7 @@ a:hover {
 #landing h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-family: fantasy;
+  font-family: "Roboto Mono", "Times New Roman", Times, serif, sans-serif;
   color: #FFF;
 }
 
@@ -87,16 +128,17 @@ a:hover {
 #landing .btn-scroll {
   -webkit-transition: .5s;
   transition: .5s;
-  color: #1beeee;
+  color: #1dcccc;
   animation: up-down 1s ease-in-out infinite alternate-reverse both;
 }
 
-#landing .btn-scroll i {
-  font-size: 48px;
+#landing .btn-scroll span {
+  font-size: 35px;
 }
 
 #landing .btn-scroll:hover {
   color: #1895cf;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .skills .progress {
@@ -112,7 +154,7 @@ a:hover {
   text-transform: uppercase;
   display: block;
   font-weight: 500;
-  font-family: sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: #FFF;
 }
 
@@ -127,10 +169,9 @@ a:hover {
 
 .skills .progress-bar {
   height: 10px;
-  -webkit-transition: .9s;
-  transition: .9s;
-  background: -webkit-gradient(linear, left top, right top, from(lightblue), to(blue));
-  background: linear-gradient(to right, lightblue, blue);
+  background: blue;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 .resume .resume-title {
@@ -144,7 +185,7 @@ a:hover {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid yellowgreen;
+  border-left: 2px solid #3030fc;
   position: relative;
 }
 
@@ -153,9 +194,17 @@ a:hover {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: sans-serif;
-  color: yellow;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: skyblue;
   margin-bottom: 10px;
+}
+
+.resume .resume-item h4 a {
+  color: skyblue;
+}
+
+.resume .resume-item h4 a:hover {
+  color: #1895cf;
 }
 
 .resume .resume-item h5 {
@@ -187,7 +236,43 @@ a:hover {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: yellow;
-  border: 2px solid aqua;
+  background: #1895cf;
+  border: 2px solid #1dcccc;
+}
+
+.form {
+  margin-left: 5%;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.form form .md-form {
+  color: black;
+}
+
+.form form .md-form input {
+  background-color: white;
+  outline: none;
+}
+
+.form .button-submit a {
+  background-color: #4fa1c2;
+  color: #FFF;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.form .button-submit a:hover {
+  background-color: #1895cf;
+}
+
+.form ul {
+  margin-top: 20%;
+}
+
+.form ul li p {
+  font-weight: 300;
+}
+
+.form ul li p span {
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

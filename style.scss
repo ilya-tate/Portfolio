@@ -1,17 +1,46 @@
-$blue-main: rgb(27, 238, 238);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); // 'Roboto Mono' Regular 400
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); // 'Roboto' Regular 400
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+$font-main: 'Roboto Mono', 'Times New Roman', Times, serif, sans-serif;
+$font-alt: 'Roboto', Arial, Helvetica, sans-serif;
+$blue-main: rgb(29, 204, 204);
 $blue-secondary: rgb(24, 149, 207);
+$background-color: rgb(82, 82, 82);
+$background-transparent-color: rgba(255, 255, 255, 0.15);
+$main-white: #FFF;
+
+* {
+    max-width: 100%;
+}
 
 body {
-    font-family: sans-serif;
-    background-color: #040404;
-    color: #FFF;
+    font-family: $font-alt;
+    background-color: $background-color;
+    color: $main-white;
     position: relative;
     background: transparent;
 
     &:before {
         content: "";
         position: fixed;
-        background: #040404 top right no-repeat; // Can place an image
+        background: $background-color top right no-repeat; // Can place an image
         background-size: hover;
         left: 0;
         right: 0;
@@ -64,8 +93,8 @@ a {
     h1 {
         margin: 0 0 10px 0;
         font-size: 64px;
-        font-family: fantasy; // Update later
-        color: #FFF;
+        font-family: $font-main;
+        color: $main-white;
     }
 
     h2 {
@@ -82,12 +111,13 @@ a {
         color: $blue-main;
         animation: up-down 1s ease-in-out infinite alternate-reverse both;
     
-        i {
-            font-size: 48px;
+        span {
+            font-size: 35px;
         }
 
         &:hover {
             color: $blue-secondary;
+            background: $background-transparent-color;
         }
     }
 }
@@ -105,8 +135,8 @@ a {
             text-transform: uppercase;
             display: block;
             font-weight: 500;
-            font-family: sans-serif;
-            color: #FFF;
+            font-family: $font-alt;
+            color: $main-white;
 
             .val {
                 float: right;
@@ -121,8 +151,9 @@ a {
 
     .progress-bar {
         height: 10px;
-        transition: .9s;
-        background: linear-gradient(to right, lightblue, blue);
+        background: blue;
+        -webkit-transition: none !important;
+        transition: none !important;
     }
 }
 
@@ -133,13 +164,13 @@ a {
         font-weight: 700;
         margin-top: 20px;
         margin-bottom: 20px;
-        color: #FFF;
+        color: $main-white;
     }
 
     .resume-item {
         padding: 0 0 20px 20px;
         margin-top: -2px;
-        border-left: 2px solid yellowgreen;
+        border-left: 2px solid rgb(48, 48, 252);
         position: relative;
         
         h4 {
@@ -147,14 +178,21 @@ a {
             font-size: 18px;
             font-weight: 600;
             text-transform: uppercase;
-            font-family: sans-serif;
-            color: yellow;
+            font-family: $font-alt;
+            color: skyblue;
             margin-bottom: 10px;
+
+            a {
+                color: skyblue;
+            }
+            a:hover {
+                color: $blue-secondary;   
+            }
         }
 
         h5 {
             font-size: 16px; 
-            background: rgba(255, 255, 255, 0.15);
+            background: $background-transparent-color;
             padding: 5px 15px;
             display: inline-block;
             font-weight: 600;
@@ -181,8 +219,48 @@ a {
             border-radius: 50px;
             left: -9px;
             top: 0;
-            background: yellow;
-            border: 2px solid aqua;
+            background: $blue-secondary;
+            border: 2px solid $blue-main;
+        }
+    }
+}
+
+.form {
+    margin-left: 5%;
+    font-family: $font-alt;
+
+    form {
+        .md-form {
+            color: black;
+            input {
+                background-color: white;
+                outline: none;
+            }
+        }
+    }
+
+    .button-submit {
+        a {
+            background-color: rgb(79, 161, 194);
+            color: $main-white;
+            font-family: $font-alt;
+        }
+        a:hover {
+            background-color: $blue-secondary;
+        }
+    }
+
+    ul {
+        margin-top: 20%;
+        
+        li {
+            p {
+                font-weight: 300;
+
+                span {
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
