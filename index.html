@@ -29,9 +29,9 @@
             <h1>Ilya Tate</h1>
             <h2>Phoenix Area Developer</h2>
             <br>
-            <a href="#skills" id="scrollto-information" class="btn-scroll scrollto" title="Scroll down"><span class="bx bx-chevron-down">Information</span></a>
+            <a href="#skills" id="scrollto-information" class="btn-scroll scrollto" title="Scroll to Information"><span class="bx bx-chevron-down">Information</span></a>
             <br>
-            <a href="#contact" id="scrollto-contactform" class="btn-scroll scrollto" title="Scroll down"><span class="bx bx-chevron-down">Contact Form</span></a>
+            <a href="#contact" id="scrollto-contactform" class="btn-scroll scrollto" title="Scroll to Contact"><span class="bx bx-chevron-down">Contact Form</span></a>
         </div>
     </section>
     <!-- /Landing -->
@@ -109,6 +109,7 @@
                     <div class="resume-item pb-0">
                         <h4>Ilya Tate</h4>
                         <p><em>I have a love for programming and work great with others.</em></p>
+                        <p><a href="https://docs.google.com/document/d/e/2PACX-1vTjXMxWCLpsirwyQbZFU2oswevTKezl_bwFT_wYdOlBvboqxhwB_RezAYXbM77oZfbv3PZEP5dqhrji/pub" title="https://docs.google.com/document/d/e/2PACX-1vTjXMxWCLpsirwyQbZFU2oswevTKezl_bwFT_wYdOlBvboqxhwB_RezAYXbM77oZfbv3PZEP5dqhrji/pub" target="_blank">Formal Resume</a></p>
                     </div>
 
                     <h3 class="resume-title">Education</h3>
@@ -151,10 +152,16 @@
 
                     <div class="resume-item">
                         <h4>Project Showcase</h4>
-                        <ul>
-                            <li><a href="#">Stopwatch</a></li>
-                            <li><a href="#">Other</a></li>
-                            <li><a href="#">Another</a></li>
+                        <ul style="list-style-type: none;">
+                            <li><a href="https://ilya-tate.github.io/Tic-Tac-Toe-Project/" title="https://ilya-tate.github.io/Tic-Tac-Toe-Project/" target="_blank">Tic-Tac-Toe</a></li>
+                            <li><a href="https://ilya-tate.github.io/A-Class-Security-Website/" title="https://ilya-tate.github.io/A-Class-Security-Website/" target="_blank">A-Class Security</a></li>
+                            <li><a href="https://ilya-tate.github.io/Stopwatch/" title="https://ilya-tate.github.io/Stopwatch/">Stopwatch</a></li>
+                            <!-- <li><a href="#" title="#">Placeholder</a></li>
+                            <li><a href="#" title="#">Placeholder</a></li>
+                            <li><a href="#" title="#">Placeholder</a></li>
+                            <li><a href="#" title="#">Placeholder</a></li>
+                            <li><a href="#" title="#">Placeholder</a></li>
+                            <li><a href="#" title="#">Placeholder</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -176,7 +183,7 @@
                 <div class="row">
             
                     <div class="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <form id="contact-form" name="contact-form" action="{getform-endpoint}" method="POST">
             
                             <div class="input row">
             
@@ -189,7 +196,7 @@
             
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email">
                                         <label for="email"></label>
                                     </div>
                                 </div>
@@ -216,13 +223,12 @@
             
                                 </div>
                             </div>
+
+                            <div class="button-submit text-center text-md-left">
+                                <button type="submit">Submit</button>
+                            </div>
             
                         </form>
-            
-                        <div class="button-submit text-center text-md-left">
-                            <a class="btn btn-primary">Send</a>
-                        </div>
-                        <div class="status"></div>
                     </div>
             
                     <div class="col-md-3 text-center">
@@ -247,13 +253,19 @@
             
                             <li>
                                 <i class="fas fa-envelope mt-4 fa-2x"></i>
-                                <p><span>Email Address:</span> ilyatate@gmail.com</p>
+                                <p><span>Email Address:</span> <a href="mailto:ilyatate@gmail.com?subject=Coding%20Contact" title="ilyatate@gmail.com?subject=Coding%20Contact" target="_blank">ilyatate@gmail.com</a></p>
                             </li>
                             <br>
 
                             <li>
                                 <i class="fas fa-envelope mt-4 fa-2x"></i>
-                                <p><span>Github:</span> <a href="https://github.com/ilya-tate">ilya-tate</a></p>
+                                <p><span>Github:</span> <a href="https://github.com/ilya-tate" title="https://github.com/ilya-tate" target="_blank">ilya-tate</a></p>
+                            </li>
+                            <br>
+
+                            <li>
+                                <i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/ilya-tate-7b9099204/" title="https://www.linkedin.com/in/ilya-tate-7b9099204/" target="_blank">Ilya Tate</a></p>
                             </li>
                         </ul>
                     </div>

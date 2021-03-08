@@ -254,13 +254,14 @@ a:hover {
   outline: none;
 }
 
-.form .button-submit a {
+.form .button-submit button {
   background-color: #4fa1c2;
   color: #FFF;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  border-radius: 15%;
 }
 
-.form .button-submit a:hover {
+.form .button-submit button:hover {
   background-color: #1895cf;
 }
 
